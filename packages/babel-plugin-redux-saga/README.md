@@ -1,6 +1,7 @@
-## NOTE: plugin is still in development mode, so use it on your own risk
+## NOTE: plugin is still in beta, so use it on your own risk
 
 Babel plugin for code instrumenting by extending `redux-saga` code fragments with additional meta-data. Meta-data contains information about code fragment location and other details, that could be consumed by developer tools or libraries.
+Adding the plugin improve logging for errors thrown in your sagas.
 
 ## Example
 
@@ -72,6 +73,7 @@ Object.defineProperty(saga2, Symbol.for("@@redux-saga/LOCATION"), {
 }
 ```
 
+Usage example could be found [in examples folder](../../examples/error-demo)
 ### Options
 
 All options are optional.
